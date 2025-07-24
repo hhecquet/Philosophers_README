@@ -17,11 +17,12 @@ What I had to do:
 * Manage timing accurately so philosophers eat for the specified time, then sleep and think accordingly
 * Detect if a philosopher dies by not eating within the allotted time and gracefully terminate the simulation
 * Synchronize console output to avoid mixed or corrupted messages when multiple threads print simultaneously
-* To accomplish this, I had to:
-  * Use **pthread library** functions for thread creation, joining, and mutex handling
-  * Implement timing functions with gettimeofday or similar to manage delays and timeouts
-  * Design an efficient way to monitor philosophers’ states without busy waiting
-  * Ensure safe access to shared variables and avoid race conditions
+
+To accomplish this, I had to:
+* Use **pthread library** functions for thread creation, joining, and mutex handling
+* Implement timing functions with gettimeofday or similar to manage delays and timeouts
+* Design an efficient way to monitor philosophers’ states without busy waiting
+* Ensure safe access to shared variables and avoid race conditions
 
 What I Learned:
 * Fundamentals of multithreading and synchronization in C
